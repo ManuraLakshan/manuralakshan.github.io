@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'manuraportfolio'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C58CFEC2F25647128B39696BB186BC51 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6CAFF94AC43E4E9CB8C8173CD430E0D3 }}
           package: .
