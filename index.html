@@ -35,6 +35,8 @@
 
 <body class="">
 
+  <div id="progressBar"></div>
+  <div id="scrollpath"></div>
   <!-- start section navbar -->
   <nav id="main-nav">
     <div class="row">
@@ -60,28 +62,31 @@
   <!-- End section navbar -->
 
   <!-- start section header -->
-  <div id="header" class="home">
-    
-    <div class="container">
-      <div class="header-content">
-        
-        <h1>I'm Manura Lakshan </h1>
-        <p style="color: #a38832;" >BICT(Hons)-Bachelor of Information &Communication Technology (Reading for)</p>
-      <div class="row">
-        <div class="col-lg-4"></div>
-        
-        <ul class="list-unstyled list-social text-center">
-            <li><a href="http://www.facebook.com/manura.lakshan.1"><i class="ion-social-facebook"></i></a></li>
-            <li><a href="http://www.linkedin.com/in/manura-lakshan-9483a5170"><i class="ion-social-linkedin"></i></a></li>
-            <li><a href="https://manura-lakshan.medium.com/"><i class="fab fa-medium"></i></a></li>
-            <li><a href="https://www.instagram.com/manura_lakshan/"><i class="ion-social-instagram"></i></a></li>
-            <li><a href="https://github.com/ManuraLakshan"><i class="ion-social-github"></i></a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=94702083227&text=Hey%20there,%20Send%20me%20your%20problem%F0%9F%98%8B"><i class="ion-social-whatsapp"></i></a></li>
-            <li><a href="#"><i class="ion-social-youtube"></i></a></li>
-            <li><a href="https://stackoverflow.com/users/12070550/manura-lakshan"><i class="fab fa-stack-overflow"></i></a></li>
+  <div class="banner">
+    <div class="blocks">
+      <div id="header" class="home">
+        <div class="container">
+          <div class="header-content">
             
-          </ul>
-      </div>   
+            <h1>I'm Manura Lakshan </h1>
+            <p style="color: #a38832;" >BICT(Hons)-Bachelor of Information &Communication Technology (Reading for)</p>
+          <div class="row">
+            <div class="col-lg-4"></div>
+            
+            <ul class="list-unstyled list-social text-center">
+                <li><a href="http://www.facebook.com/manura.lakshan.1"><i class="ion-social-facebook"></i></a></li>
+                <li><a href="http://www.linkedin.com/in/manura-lakshan-9483a5170"><i class="ion-social-linkedin"></i></a></li>
+                <li><a href="https://manura-lakshan.medium.com/"><i class="fab fa-medium"></i></a></li>
+                <li><a href="https://www.instagram.com/manura_lakshan/"><i class="ion-social-instagram"></i></a></li>
+                <li><a href="https://github.com/ManuraLakshan"><i class="ion-social-github"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=94702083227&text=Hey%20there,%20Send%20me%20your%20problem%F0%9F%98%8B"><i class="ion-social-whatsapp"></i></a></li>
+                <li><a href="#"><i class="ion-social-youtube"></i></a></li>
+                <li><a href="https://stackoverflow.com/users/12070550/manura-lakshan"><i class="fab fa-stack-overflow"></i></a></li>
+                
+              </ul>
+          </div>   
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -416,7 +421,7 @@
 
   <!-- start section portfolio -->
   <div id="portfolio" class="text-center paddsection">
-
+<!-- 
     <div class="container">
       <div class="section-title text-center">
         <h2 class="lower_case_color">My Gallery</h2>
@@ -529,7 +534,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
   </div>
   <!-- End section portfolio -->
@@ -546,8 +551,6 @@
               <h2 class="mb-30 lower_case_color">GET IN TOUCH</h2>
 
               <ul class="contact-details">
-                <li><span>7/528,</span></li>
-                <li><span> Colombo road, Gintota.</span></li>
                 <li><span>0767097577</span></li>
                 <li><span>lakshan.smm@gmail.com</span></li>
               </ul>
@@ -638,4 +641,12 @@
 </body>
 
 </html>
-
+<!--scroll bar script-->
+<script type="text/javascript">
+  let progress = document.getElementById('progressBar');
+  let totalHeight = document.body.scrollHeight - window.innerHeight;
+  window.onscroll = function(){
+    let progressHeight = (window.pageYOffset / totalHeight) * 115;
+    progress.style.height = progressHeight + "%";
+  }
+</script>
