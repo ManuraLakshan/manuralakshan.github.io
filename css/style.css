@@ -328,14 +328,16 @@ nav ul li a {
 
   background-image:
           linear-gradient(to right, rgba(0,0,0,1.6), rgba(0,0,0,0.7),rgba(0,0,0,0)),
-        url('../images/3.jpg'),url('../images/home-bg2.png');
+        url('../images/3.png'),url('../images/home-bg2.png');
+
 
 
   padding: 25px;
   background-repeat: no-repeat;
-  background-size: 442px 950px,  1280px 720px;
+  background-size: 442px 950px,  630px 355px;
   background-attachment: fixed;
-  background-position: right,left bottom;
+  background-position: right bottom,left bottom;
+  
 
 
   margin-top: -20px;
